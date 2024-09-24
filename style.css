@@ -1,0 +1,168 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Side Menu */
+.side-menu {
+    width: 250px;
+    background-color: #333;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: 0.3s;
+}
+
+.menu-header {
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.menu-items li {
+    padding: 15px;
+    text-align: center;
+}
+
+.menu-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.menu-link:hover {
+    background-color: #575757;
+}
+
+.close-btn {
+    background: none;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+    margin-left: 0;
+    transition: margin-left 0.3s;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header h1 {
+    color: #333;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Bus Search Form */
+.booking-section {
+    margin-top: 30px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.booking-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #45A049;
+}
+
+/* Bus List */
+.bus-list {
+    margin-top: 30px;
+}
+
+.bus-item {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bus-item h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.bus-item .btn {
+    background-color: #2196F3;
+}
+
+.bus-item .btn:hover {
+    background-color: #1e88e5;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 10px;
+    }
+
+    .booking-section {
+        padding: 20px;
+    }
+}

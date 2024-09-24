@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loco Bus - Bus Booking App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Side Menu -->
+    <div class="side-menu" id="side-menu">
+        <div class="menu-header">
+            <h2>Loco Bus</h2>
+            <button class="close-btn" id="close-menu-btn">✕</button>
+        </div>
+        <ul class="menu-items">
+            <li><a href="#" class="menu-link">Home</a></li>
+            <li><a href="#" class="menu-link">My Bookings</a></li>
+            <li><a href="#" class="menu-link">Profile</a></li>
+            <li><a href="#" class="menu-link">Settings</a></li>
+            <li><a href="#" class="menu-link">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="main-content">
+        <header class="main-header">
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+            <h1>Bus Booking - Loco Bus</h1>
+        </header>
+
+        <section class="booking-section">
+            <h2>Search for Buses</h2>
+
+            <!-- Bus Search Form -->
+            <form id="search-form">
+                <div class="input-group">
+                    <label for="source">Source</label>
+                    <input type="text" id="source" placeholder="Enter Source">
+                </div>
+                <div class="input-group">
+                    <label for="destination">Destination</label>
+                    <input type="text" id="destination" placeholder="Enter Destination">
+                </div>
+                <div class="input-group">
+                    <label for="travel-date">Date of Travel</label>
+                    <input type="date" id="travel-date">
+                </div>
+                <button type="submit" class="btn">Search Buses</button>
+            </form>
+
+            <!-- Bus List -->
+            <div id="bus-list" class="bus-list"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
